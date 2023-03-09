@@ -6,9 +6,9 @@ const router = Router();
 
 //rota home
 router.get('/', PageController.home);
-router.get('dogs', PageController.dogs);
-router.get('cats', PageController.cats);
-router.get('fishes', PageController.fishes);
+router.get('/dogs', PageController.dogs);
+router.get('/cats', PageController.cats);
+router.get('/fishes', PageController.fishes);
 //rota de busca
 router.get('/search', SearchController.search);
 

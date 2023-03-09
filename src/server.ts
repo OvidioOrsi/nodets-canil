@@ -19,7 +19,7 @@ server.use(mainRoutes);
 
 //Se nenhuma rota funcionar, rodar essa
 server.use((req, res) => {
-    res.send('Página não encontrada!')
+    res.render('pages/404');
 });
 
 server.listen(process.env.PORT);
